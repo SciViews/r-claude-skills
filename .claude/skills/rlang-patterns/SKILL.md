@@ -1,7 +1,7 @@
 ---
 name: rlang-patterns
-description: rlang metaprogramming patterns for data-masking, injection operators, and dynamic dots. Use when mentions "tidy evaluation", "rlang", "data-masking", "embrace", "{{}}", "enquo", "!!", "!!!", "injection", "dynamic dots", "...", "metaprogramming", "NSE", "non-standard evaluation", or writing functions that use tidy evaluation in R.
-version: 1.0.0
+description: rlang metaprogramming patterns for data-masking, injection operators, and dynamic dots. Use when mentions "tidy evaluation", "avaliação tidy", "rlang", "metaprogramming", "metaprogramação", "metaprogramação em R", "data-masking", "data masking", "mascaramento de dados", "embrace", "embrace operator", "operador embrace", "{{}}", "enquo", "!!", "!!!", "injection", "injeção", "inject", "injetar", "dynamic dots", "...", "NSE", "non-standard evaluation", "avaliação não padrão", "avaliação não-padrão", "quo", "quos", "sym", "syms", "data_sym", "data_syms", ".data", ".env", "pronouns", "pronomes", "defuse", "defusing", "write functions with tidy eval", "escrever funções com tidy eval", "funções com tidy eval", "usar enquo", "use enquo", "usar embrace", "use embrace", "usar !!", "use !!", "usar !!!", "use !!!", "forward arguments", "encaminhar argumentos", or writing functions that use tidy evaluation in R.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob
 ---

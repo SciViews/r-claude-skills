@@ -1,0 +1,124 @@
+{
+  "timestamp": "2026-03-09T16:09:30.400587",
+  "tests_run": 12,
+  "skills": {
+    "dm-relational": {
+      "positive": [
+        {
+          "prompt": "Como usar dm package para relational data?",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Create data model with primary keys",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Add foreign keys with dm_add_fk",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Visualize database schema",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Work with multi-table data in R",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "dm_from_data_frames usage",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "library(dm)\n\nmy_dm <- dm(...)\n# How to add relationships?",
+          "expected": "dm-relational",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        },
+        {
+          "prompt": "I need to model relational data in R",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How do I work with database schemas in R?",
+          "expected": "dm-relational",
+          "detected": [
+            "dm-relational"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "SQLAlchemy ORM",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Django models",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Database design in SQL",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 8,
+      "false_negatives": 1,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 0.8888888888888888,
+        "precision": 1.0,
+        "accuracy": 0.9166666666666666,
+        "f1_score": 0.9411764705882353
+      }
+    }
+  }
+}

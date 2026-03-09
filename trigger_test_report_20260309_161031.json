@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-03-09T16:10:31.326076",
+  "tests_run": 12,
+  "skills": {
+    "r-style-guide": {
+      "positive": [
+        {
+          "prompt": "Qual o estilo de c\u00f3digo correto em R?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Use snake_case ou camelCase?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como formatar c\u00f3digo R?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide",
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Apply tidyverse style guide",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide",
+            "tidyverse-expert",
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Run styler on my code",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "R naming conventions",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "myFunction = function(x){return(x+1)}\n# Is this good style?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How should I name variables in R?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "What are R best practices?",
+          "expected": "r-style-guide",
+          "detected": [
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Python PEP 8",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "JavaScript style guide",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "C++ coding standards",
+          "expected": null,
+          "detected": [
+            "r-bayes"
+          ],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 9,
+      "false_negatives": 0,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      }
+    }
+  }
+}

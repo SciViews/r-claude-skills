@@ -1,0 +1,308 @@
+{
+  "timestamp": "2026-03-09T16:09:41.396910",
+  "tests_run": 33,
+  "skills": {
+    "r-package-development": {
+      "positive": [
+        {
+          "prompt": "Quero criar um pacote R",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como documento fun\u00e7\u00f5es com roxygen2?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Configure testthat para este package",
+          "expected": "r-package-development",
+          "detected": [
+            "tdd-workflow",
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Prepare para submiss\u00e3o no CRAN",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Use devtools para desenvolver pacote",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Create package vignette",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Preciso desenvolver um pacote em R",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como estruturar um pacote R?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Ajude-me a criar um pacote R",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Building an R package",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How to build an R package?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Setting up usethis for package development",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Configure pkgdown for my R package",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Documenta\u00e7\u00e3o de pacote com roxygen2",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "R CMD check est\u00e1 falhando",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How to pass R CMD check?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Prepare my package for CRAN submission",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Write vignettes for my R package",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Criar vignet para o pacote",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How to add tests to my R package?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "usethis::create_package('mypackage')\n# What's next?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "I need to document my R package properly",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How do I structure an R package?",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "library(devtools)\n# Starting package development",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Tenho um pacote R e preciso adicionar testes",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "DESCRIPTION file configuration for R package",
+          "expected": "r-package-development",
+          "detected": [
+            "r-package-development"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Create a Python package",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "npm package development",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Rust crate creation",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "pip install package",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "setuptools configuration",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "pyproject.toml setup",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "JavaScript package.json",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 26,
+      "false_negatives": 0,
+      "true_negatives": 7,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      }
+    }
+  }
+}

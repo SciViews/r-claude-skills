@@ -1,7 +1,7 @@
 ---
 name: r-package-development
-description: R package development guide covering dependencies, API design, testing, and documentation. Use when mentions "R package", "devtools", "usethis", "roxygen2", "DESCRIPTION", "NAMESPACE", "pkgdown", "package structure", "vignette", "package documentation", "R CMD check", "CRAN submission", or developing R packages.
-version: 1.0.0
+description: R package development guide covering dependencies, API design, testing, and documentation. Use when mentions "R package", "pacote R", "pacote r", "devtools", "usethis", "roxygen2", "testthat", "pkgdown", "criar pacote", "create package", "desenvolver pacote", "develop package", "package development", "desenvolvimento de pacote", "DESCRIPTION", "NAMESPACE", "CRAN submission", "submissão CRAN", "submissão ao CRAN", "package documentation", "documentação de pacote", "package structure", "estrutura de pacote", "vignette", "vinheta", "vignet", "R CMD check", "check package", "verificar pacote", "build package", "construir pacote", "criar um pacote R", "make an R package", "building R packages", "construindo pacotes R", or developing R packages. ONLY R packages - do NOT activate for Python packages, npm packages, pip, setuptools, or JavaScript packages.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob
 ---

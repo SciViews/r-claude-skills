@@ -1,7 +1,7 @@
 ---
 name: dm-relational
-description: Relational data modeling with {dm} package - create, visualize, and manipulate multi-table data models with primary/foreign keys. Use when mentions "dm package", "relational data", "primary key", "foreign key", "data model", "multi-table", "dm_from_data_frames", "dm_add_pk", "dm_add_fk", "dm_draw", "database schema", or working with related data frames or relational databases in R.
-version: 1.0.0
+description: Relational data modeling with {dm} package - create, visualize, and manipulate multi-table data models with primary/foreign keys. Use when mentions "dm package", "pacote dm", "relational data", "dados relacionais", "primary key", "chave primária", "foreign key", "chave estrangeira", "data model", "modelo de dados", "multi-table", "múltiplas tabelas", "tabelas relacionadas", "relate tables", "relacionar tabelas", "database schema", "esquema de banco", "esquema de dados", "dm_from_data_frames", "dm_add_pk", "dm_add_fk", "dm_draw", "dm_flatten", "dm_filter", "dm_zoom_to", "visualize schema", "visualizar esquema", "create data model", "criar modelo", "model relational data", "modelar dados relacionais", "work with related data", "trabalhar com dados relacionados", "multiple related tables", "várias tabelas relacionadas", or working with related data frames, relational databases, or referential integrity in R.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob
 ---

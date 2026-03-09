@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-03-09T16:10:45.498561",
+  "tests_run": 12,
+  "skills": {
+    "rlang-patterns": {
+      "positive": [
+        {
+          "prompt": "Como usar tidy evaluation?",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Preciso usar {{ }} (embrace operator)",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Explique data-masking em R",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Use enquo e !! para metaprograma\u00e7\u00e3o",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como funcionam dynamic dots?",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Injection operators in rlang",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "my_function <- function(data, var) { ... }\n# How to use var as column name?",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns",
+            "r-style-guide"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "I need to write a function that uses dplyr verbs",
+          "expected": "rlang-patterns",
+          "detected": [
+            "rlang-patterns",
+            "tidyverse-expert"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "What is non-standard evaluation?",
+          "expected": "rlang-patterns",
+          "detected": [
+            "r-bayes",
+            "rlang-patterns"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Python decorators",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "JavaScript metaprogramming",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Lisp macros",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 9,
+      "false_negatives": 0,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      }
+    }
+  }
+}

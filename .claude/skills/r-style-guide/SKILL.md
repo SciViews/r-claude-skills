@@ -1,7 +1,7 @@
 ---
 name: r-style-guide
-description: R style guide covering naming conventions, spacing, layout, and function design best practices. Use when mentions "snake_case", "camelCase", "code style", "naming convention", "R style guide", "function design", "code formatting", "tidyverse style", "lintr", "styler", "best practices", or asks about R coding standards and conventions.
-version: 1.0.0
+description: R style guide covering naming conventions, spacing, layout, and function design best practices. Use when mentions "estilo de código", "code style", "formatação", "formatting", "format code", "formatar código", "convenções", "conventions", "naming convention", "convenção de nomes", "snake_case", "camelCase", "styler", "lintr", "apply styler", "run styler", "aplicar styler", "executar styler", "tidyverse style", "estilo tidyverse", "R coding standards", "padrões de código R", "padrões de código", "best practices", "boas práticas", "code quality", "qualidade de código", "check style", "verificar estilo", "R style guide", "guia de estilo R", "function design", "design de funções", "clean code R", "código limpo", "indentation", "indentação", "spacing", "espaçamento", "assignment operator", "operador de atribuição", "arrow operator", "naming variables", "nomear variáveis", "naming functions", "nomear funções", "code organization", "organização de código", "file structure", "estrutura de arquivos", "comments", "comentários", "documentation style", "estilo de documentação", or asks about R coding standards, style conventions, formatting rules, or best practices for writing clean R code.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob
 ---

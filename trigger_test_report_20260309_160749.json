@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-03-09T16:07:49.836100",
+  "tests_run": 11,
+  "skills": {
+    "r-datascience": {
+      "positive": [
+        {
+          "prompt": "Preciso fazer uma an\u00e1lise de dados em R",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como fa\u00e7o machine learning com tidymodels?",
+          "expected": "r-datascience",
+          "detected": [
+            "r-tidymodels",
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Quero fazer data wrangling neste dataset",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience",
+            "tidyverse-expert"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Me ajude com uma an\u00e1lise estat\u00edstica em R",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como fazer feature engineering em R?",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "library(tidyverse)\nlibrary(tidymodels)\n\n# How to proceed?",
+          "expected": "r-datascience",
+          "detected": [
+            "r-tidymodels",
+            "r-datascience",
+            "tidyverse-expert"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "I have a dataset and need to build a predictive model in R",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "What's the best way to do exploratory data analysis in R?",
+          "expected": "r-datascience",
+          "detected": [
+            "r-datascience"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Create a machine learning model in Python",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Use pandas for data analysis",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Build a neural network with PyTorch",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 8,
+      "false_negatives": 0,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "accuracy": 1.0,
+        "f1_score": 1.0
+      }
+    }
+  }
+}
