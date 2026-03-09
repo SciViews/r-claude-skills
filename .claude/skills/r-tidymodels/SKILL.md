@@ -1,7 +1,7 @@
 ---
 name: r-tidymodels
-description: Expert R data science using tidymodels for machine learning. Use when working with tidymodels, recipes, parsnip, tune, workflows, user mentions "machine learning in R", "ML em R", "predictive modeling", "modelagem preditiva", "modelo de classificação", "classification model", "modelo de regressão", "regression model", "feature engineering", "engenharia de features", "model tuning", "tunear modelo", "tuning", "tunar", "hyperparameters", "hiperparâmetros", "cross-validation", "validação cruzada", "cv", "recipe steps", "data preprocessing", discusses ML workflows, or model development in R.
-version: 1.2.0
+description: Expert R data science using tidymodels for machine learning. Use when working with tidymodels, recipes, parsnip, tune, workflows, user mentions "machine learning in R", "ML em R", "predictive modeling", "modelagem preditiva", "modelo de classificação", "classification model", "modelo de regressão", "regression model", "feature engineering", "engenharia de features", "model tuning", "tunear modelo", "tuning", "tunar", "tune boosting", "tune gradient boosting", "xgboost tuning", "random forest tuning", "hyperparameters", "hiperparâmetros", "cross-validation", "validação cruzada", "cv", "recipe steps", "data preprocessing", discusses ML workflows, or model development in R.
+version: 1.3.0
 user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R *), WebFetch
 ---

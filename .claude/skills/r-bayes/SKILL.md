@@ -1,7 +1,7 @@
 ---
 name: r-bayes
-description: Patterns for Bayesian inference in R using brms, including multilevel models, DAG validation, and marginal effects. Use when mentions "Bayesian", "brms", "Stan", "cmdstanr", "multilevel model", "hierarchical model", "random effects", "prior specification", "posterior distribution", "MCMC", "Markov Chain Monte Carlo", "DAG", "causal inference", "marginal effects", "tidybayes", or performing Bayesian statistical analysis in R.
-version: 1.0.0
+description: Patterns for Bayesian inference in R using brms, including multilevel models, DAG validation, and marginal effects. Use when mentions "Bayesian in R", "Bayesian with R", "brms", "Stan", "cmdstanr", "multilevel model", "hierarchical model", "random effects", "prior specification", "posterior distribution", "MCMC", "Markov Chain Monte Carlo", "DAG", "causal inference", "marginal effects", "tidybayes", or performing Bayesian statistical analysis in R. ONLY R - do NOT activate for Python Bayesian (PyMC3, PyMC, Pyro), NOT for Julia (Turing.jl).
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob
 ---

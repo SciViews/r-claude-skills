@@ -1,7 +1,7 @@
 ---
 name: r-text-mining
-description: Expert text mining and NLP in R using tidytext and textrecipes. Use when analyzing text data, mentions "text analysis", "análise de texto", "NLP", "processamento de linguagem natural", "sentiment analysis", "análise de sentimento", "topic modeling", "modelagem de tópicos", "tidytext", "textrecipes", "tokenization", "tokenização", "tokenizar", "TF-IDF", "text classification", "classificação de texto", "word embeddings", "n-gram", "ngram", "natural language processing", or any text/NLP task in R.
-version: 1.1.0
+description: Expert text mining and NLP in R using tidytext and textrecipes. Use when analyzing text data, mentions "text analysis in R", "análise de texto em R", "NLP in R", "processamento de linguagem natural em R", "sentiment analysis", "análise de sentimento", "topic modeling", "modelagem de tópicos", "tidytext", "textrecipes", "tokenization", "tokenização", "tokenizar", "TF-IDF", "text classification", "classificação de texto", "word embeddings", "n-gram", "ngram", "natural language processing", "analyze reviews", "customer reviews", "analyze text", "preprocess text", "text preprocessing", "preprocessar texto", or any text/NLP task in R. ONLY R - do NOT activate for Python NLP (spaCy, NLTK, TextBlob), NOT for general NLP without R context.
+version: 1.2.0
 user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R -e *)
 ---
