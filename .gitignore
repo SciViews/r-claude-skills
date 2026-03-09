@@ -1,0 +1,85 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+.Rapp.history
+*.Rproj
+.Renviron
+.httr-oauth
+
+# R Session Data
+*.rds
+*.rda
+*.RData
+
+# R Temporary files
+*~
+*.swp
+*.swo
+*-Ex.R
+
+# R package build artifacts
+*.tar.gz
+*.zip
+/check/
+/..Rcheck/
+
+# knitr and R markdown
+*.utf8.md
+*.knit.md
+.Rproj.user
+/*_cache/
+/cache/
+/*_files/
+
+# pkgdown site
+docs/
+/doc/
+/Meta/
+
+# Shiny token
+rsconnect/
+
+# Python (caso tenha scripts auxiliares)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Node (caso tenha automações)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Claude Code - arquivos temporários/locais
+# IMPORTANTE: NÃO ignorar .claude/skills/ pois é o conteúdo principal
+.claude/cache/
+.claude/logs/
+.claude/tmp/
+
+# Test/Development directories
+/test-output/
+/sandbox/
+/tmp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
