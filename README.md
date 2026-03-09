@@ -4,7 +4,20 @@ A comprehensive collection of Claude Code skills specifically designed for R pro
 
 ## 🎯 Overview
 
-This repository contains production-ready skills that enhance Claude Code's capabilities when working with R projects. These skills provide expert guidance on R programming patterns, package development, data visualization, Bayesian analysis, performance optimization, and more.
+This repository contains production-ready skills that enhance Claude Code's capabilities when working with R projects. These skills provide expert guidance on R programming patterns, package development, data visualization, machine learning with tidymodels, Bayesian analysis, performance optimization, and more.
+
+**Featured**: The new **r-tidymodels** skill provides comprehensive machine learning expertise with ~4,150 lines of knowledge covering the complete ML workflow from data preparation through model deployment, based on official tidymodels documentation and the "Tidy Modeling with R" book.
+
+### ✨ r-tidymodels Highlights
+
+- **Complete ML Workflows**: 3-phase approach (Foundation → Optimization → Production)
+- **100+ Recipe Steps**: Comprehensive preprocessing catalog with guidelines
+- **6 Production Templates**: Binary/multiclass classification, regression, time series, deployment
+- **4 Case Studies**: Ames housing, hotel bookings, bean classification, credit default
+- **Expert Patterns**: Hyperparameter tuning, class imbalance, ensembles, deployment
+- **4,150 Lines**: Deep knowledge from tidymodels.org + "Tidy Modeling with R" book
+
+[→ See full r-tidymodels documentation](/.claude/skills/r-tidymodels/)
 
 ## 📦 Available Skills
 
@@ -22,8 +35,9 @@ This repository contains production-ready skills that enhance Claude Code's capa
 - **[dm-relational](/.claude/skills/dm-relational/)** - Relational data modeling with {dm} package for multi-table data models
 - **[rlang-patterns](/.claude/skills/rlang-patterns/)** - Metaprogramming patterns for data-masking, injection operators, and dynamic dots
 
-### Statistics & Analysis
+### Machine Learning & Statistics
 
+- **[r-tidymodels](/.claude/skills/r-tidymodels/)** - Expert machine learning with tidymodels: recipes, parsnip, workflows, tune, model deployment
 - **[r-bayes](/.claude/skills/r-bayes/)** - Bayesian inference patterns using brms, including multilevel models and marginal effects
 
 ### Development Workflow
@@ -107,6 +121,18 @@ library(shiny)  # Auto-triggers r-shiny skill
 # Claude provides reactive programming patterns, UI best practices, etc.
 ```
 
+**Machine learning with tidymodels:**
+```r
+library(tidymodels)  # Auto-triggers r-tidymodels skill
+
+# Claude provides expert guidance on:
+# - Data splitting and resampling
+# - Feature engineering with recipes
+# - Model specification and tuning
+# - Hyperparameter optimization
+# - Model deployment patterns
+```
+
 ## 🏗️ Repository Structure
 
 ```
@@ -115,6 +141,12 @@ library(shiny)  # Auto-triggers r-shiny skill
 │   ├── SKILL.md           # Main skill definition
 │   ├── README.md          # User documentation
 │   └── examples/          # Code examples
+├── r-tidymodels/          # 🆕 Machine Learning with tidymodels
+│   ├── SKILL.md           # Complete 3-phase ML workflow
+│   ├── README.md          # User guide
+│   ├── templates/         # 6 ready-to-use ML templates
+│   ├── examples/          # 4 end-to-end case studies
+│   └── references/        # 100+ recipe steps catalog
 ├── ggplot2/
 │   ├── SKILL.md
 │   ├── templates/         # Plot templates
@@ -177,6 +209,8 @@ MIT License - See [LICENSE](LICENSE) for details
 - [SkillMaker Architecture](/.claude/skills/skillMaker/ARCHITECTURE.md)
 - [R Project](https://www.r-project.org/)
 - [Tidyverse](https://www.tidyverse.org/)
+- [Tidymodels](https://www.tidymodels.org/) - Machine learning framework
+- [Tidy Modeling with R](https://www.tmwr.org/) - Official tidymodels book
 - [Posit Community](https://community.rstudio.com/)
 
 ## 🙏 Acknowledgments
