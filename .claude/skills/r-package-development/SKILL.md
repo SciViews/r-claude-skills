@@ -1,6 +1,9 @@
 ---
 name: r-package-development
-description: R package development guide covering dependencies, API design, testing, and documentation. Use when developing R packages.
+description: R package development guide covering dependencies, API design, testing, and documentation. Use when mentions "R package", "devtools", "usethis", "roxygen2", "DESCRIPTION", "NAMESPACE", "pkgdown", "package structure", "vignette", "package documentation", "R CMD check", "CRAN submission", or developing R packages.
+version: 1.0.0
+user-invocable: false
+allowed-tools: Read, Grep, Glob
 ---
 
 # R Package Development Decision Guide

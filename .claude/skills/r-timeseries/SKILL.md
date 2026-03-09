@@ -2,7 +2,7 @@
 name: r-timeseries
 description: Expert time series forecasting and analysis in R using fable/tsibble. Use when forecasting, analyzing time series data, mentions "ARIMA", "ETS", "seasonality", "fable", "tsibble", "feasts", "forecast", "temporal data", "trend", "prophet", "time-based prediction", or any time series task.
 version: 1.0.0
-user-invocable: true
+user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R -e *)
 ---
 

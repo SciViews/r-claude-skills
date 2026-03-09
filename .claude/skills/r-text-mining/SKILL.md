@@ -2,7 +2,7 @@
 name: r-text-mining
 description: Expert text mining and NLP in R using tidytext and textrecipes. Use when analyzing text data, mentions "text analysis", "NLP", "sentiment analysis", "topic modeling", "tidytext", "textrecipes", "tokenization", "TF-IDF", "text classification", "word embeddings", "natural language processing", or any text/NLP task in R.
 version: 1.0.0
-user-invocable: true
+user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R -e *)
 ---
 

@@ -1,6 +1,9 @@
 ---
 name: tdd-workflow
-description: Test-driven development workflow for R using testthat. Use when writing new features, fixing bugs, or refactoring code. Enforces test-first development with 80%+ coverage.
+description: Test-driven development workflow for R using testthat. Use when mentions "TDD", "test-driven", "testthat", "test_that", "expect_", "unit test", "test coverage", "covr", "red-green-refactor", "test first", or writing new features, fixing bugs, or refactoring code. Enforces test-first development with 80%+ coverage.
+version: 1.0.0
+user-invocable: true
+allowed-tools: Read, Write, Edit, Bash(Rscript -e "testthat::*"), Bash(Rscript -e "covr::*")
 ---
 
 # Test-Driven Development Workflow for R

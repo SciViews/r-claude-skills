@@ -1,6 +1,9 @@
 ---
 name: rlang-patterns
-description: rlang metaprogramming patterns for data-masking, injection operators, and dynamic dots. Use when writing functions that use tidy evaluation.
+description: rlang metaprogramming patterns for data-masking, injection operators, and dynamic dots. Use when mentions "tidy evaluation", "rlang", "data-masking", "embrace", "{{}}", "enquo", "!!", "!!!", "injection", "dynamic dots", "...", "metaprogramming", "NSE", "non-standard evaluation", or writing functions that use tidy evaluation in R.
+version: 1.0.0
+user-invocable: false
+allowed-tools: Read, Grep, Glob
 ---
 
 # Modern rlang Patterns for Data-Masking

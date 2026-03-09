@@ -2,7 +2,7 @@
 name: r-datascience
 description: Expert R data science using tidyverse and tidymodels. Use when working with data in R, mentions "tidyverse", "dplyr", "data wrangling", "machine learning", "statistical modeling", "ggplot2", "data visualization", "predictive modeling", "feature engineering", "model training", "cross-validation", or any data science task in R.
 version: 1.0.0
-user-invocable: true
+user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R -e *)
 ---
 

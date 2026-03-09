@@ -1,6 +1,9 @@
 ---
 name: tidyverse-patterns
-description: Modern tidyverse patterns for R including pipes, joins, grouping, purrr, and stringr. Use when writing tidyverse R code.
+description: Modern tidyverse patterns for R including pipes, joins, grouping, purrr, and stringr. Use when mentions "native pipe", "pipe operator", "|>", "join_by", ".by grouping", "per-operation grouping", "across()", "pick()", "reframe()", "list_rbind", "modern tidyverse", "dplyr 1.1", or writing modern tidyverse R code with latest patterns.
+version: 1.0.0
+user-invocable: false
+allowed-tools: Read, Grep, Glob
 ---
 
 # Modern Tidyverse Patterns
