@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-03-09T15:52:50.532039",
+  "tests_run": 12,
+  "skills": {
+    "r-shiny": {
+      "positive": [
+        {
+          "prompt": "Crie um Shiny app",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como fazer reactive programming em Shiny?",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Preciso usar shiny modules",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Construa um dashboard interativo em R",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como otimizar performance de Shiny app?",
+          "expected": "r-shiny",
+          "detected": [
+            "r-performance",
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Implement user authentication in Shiny",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "library(shiny)\n\nui <- fluidPage(...)\n# How to add reactivity?",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "I need to build an interactive R dashboard",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How do I modularize my Shiny app?",
+          "expected": "r-shiny",
+          "detected": [
+            "r-shiny"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Create a Streamlit app",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Build a Dash dashboard",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Flask web application",
+          "expected": null,
+          "detected": [
+            "r-shiny"
+          ],
+          "success": false,
+          "type": "false_positive"
+        }
+      ],
+      "true_positives": 9,
+      "false_negatives": 0,
+      "true_negatives": 2,
+      "false_positives": 1,
+      "metrics": {
+        "recall": 1.0,
+        "precision": 0.9,
+        "accuracy": 0.9166666666666666,
+        "f1_score": 0.9473684210526316
+      }
+    }
+  }
+}

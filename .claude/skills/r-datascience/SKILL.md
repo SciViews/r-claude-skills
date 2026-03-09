@@ -1,7 +1,7 @@
 ---
 name: r-datascience
-description: Expert R data science using tidyverse and tidymodels. Use when working with data in R, mentions "tidyverse", "dplyr", "data wrangling", "machine learning", "statistical modeling", "ggplot2", "data visualization", "predictive modeling", "feature engineering", "model training", "cross-validation", or any data science task in R.
-version: 1.0.0
+description: Expert R data science using tidyverse and tidymodels. Use when working with data in R, mentions "tidyverse", "dplyr", "data wrangling", "análise de dados", "análise de dados em R", "data analysis", "data analysis in R", "análise estatística", "statistical analysis", "estatística em R", "machine learning", "machine learning in R", "ML em R", "aprendizado de máquina", "statistical modeling", "modelagem estatística", "ggplot2", "data visualization", "visualização de dados", "predictive modeling", "modelagem preditiva", "feature engineering", "engenharia de features", "model training", "treinar modelo", "treinamento de modelo", "cross-validation", "validação cruzada", "ciência de dados", "data science", "explorar dados", "explore data", "EDA", "análise exploratória", "exploratory analysis", or any data science task in R. ONLY activate for R language - do NOT activate for Python, pandas, scikit-learn, numpy, or other non-R data science tools.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Write, Edit, Bash(Rscript *), Bash(R -e *)
 ---

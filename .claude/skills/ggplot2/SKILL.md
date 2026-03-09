@@ -1,7 +1,7 @@
 ---
 name: ggplot2
-description: Expert ggplot2 data visualization in R - grammar of graphics, geoms, themes, scales, faceting, and styling. Use when user works with ggplot2, mentions "ggplot", "geom_", creates visualizations in R, asks about plot customization, themes, or data visualization best practices.
-version: 1.0.0
+description: Expert ggplot2 data visualization in R - grammar of graphics, geoms, themes, scales, faceting, and styling. Use when user works with ggplot2, mentions "ggplot", "geom_", creates visualizations in R, asks about plot customization, "customizar theme", "customize theme", "customizar plot", themes, "facet_wrap", "facet_grid", "faceting", "facetas", "anotações", "annotations", "annotate", "adicionar anotações", "color scale", "scales", "escala de cores", "gráfico", "plot", "visualização", or data visualization best practices.
+version: 1.1.0
 allowed-tools: Read, Write, Edit, Grep, Glob
 user-invocable: false
 ---

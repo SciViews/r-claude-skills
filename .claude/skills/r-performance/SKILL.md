@@ -1,7 +1,7 @@
 ---
 name: r-performance
-description: R performance best practices including profiling, benchmarking, vctrs, and optimization strategies. Use when mentions "profiling", "profvis", "benchmark", "bench::mark", "slow code", "optimize R", "vectorization", "performance", "memory usage", "bottleneck", "speed up", "parallel processing", "Rcpp", "system.time", or optimizing R code performance.
-version: 1.0.0
+description: R performance best practices including profiling, benchmarking, vctrs, and optimization strategies. Use when mentions "profiling", "profvis", "benchmark", "bench::mark", "slow code", "código lento", "lento", "slow", "optimize R", "otimizar R", "otimizar código", "otimizar", "optimize", "optimize code", "vectorization", "vectorizar", "vectorize", "performance", "memory usage", "bottleneck", "gargalo", "speed up", "acelerar", "parallel processing", "Rcpp", "system.time", or optimizing R code performance. ONLY R - do NOT activate for Python, C++, JavaScript optimization.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Grep, Glob, Bash(Rscript -e *)
 ---

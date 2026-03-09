@@ -1,7 +1,7 @@
 ---
 name: r-shiny
-description: Expert Shiny app development in R - reactive programming, UI design, modules, performance, and security. Use when working with shiny, shinydashboard, or building interactive R web applications. Triggers on shiny library imports, server/ui function patterns, reactive expressions, or user requests for Shiny help.
-version: 1.0.0
+description: Expert Shiny app development in R - reactive programming, UI design, modules, performance, and security. Use when working with shiny, shinydashboard, or building interactive R web applications. Triggers on "dashboard interativo", "interactive dashboard", "dashboard em R", "R dashboard", "aplicativo R", "R app", "aplicação Shiny", "Shiny app", shiny library imports, server/ui function patterns like "ui <- fluidPage", "server <- function", reactive expressions, renderPlot, renderTable, observeEvent, reactiveVal, or user requests for Shiny help, web applications in R, or reactive programming guidance.
+version: 1.1.0
 user-invocable: false
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---

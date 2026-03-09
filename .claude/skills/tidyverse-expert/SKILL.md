@@ -1,7 +1,7 @@
 ---
 name: tidyverse-expert
-description: Expert R data manipulation with tidyverse - dplyr, tidyr, purrr, stringr, forcats, lubridate. Use when working with tidyverse, mentions "dplyr verbs", "data wrangling", "tidyr pivoting", "purrr map", "string manipulation", "factors", "dates in R", or discusses advanced data transformation patterns, joins, nesting, functional programming, or complex data cleaning tasks in R.
-version: 1.0.0
+description: Expert R data manipulation with tidyverse - dplyr, tidyr, purrr, stringr, forcats, lubridate. Use when working with tidyverse, mentions "filter", "select", "mutate", "summarize", "summarise", "arrange", "group_by", "join", "joins", "dplyr verbs", "data wrangling", "manipulação de dados", "data manipulation", "tidyr pivoting", "pivot_longer", "pivot_wider", "pivot", "purrr map", "map", "map_dbl", "purrr", "string manipulation", "manipulação de strings", "stringr", "factors", "forcats", "dates in R", "datas em R", "lubridate", "pipe operator", "%>%", "|>", or discusses advanced data transformation patterns, nesting, functional programming, or complex data cleaning tasks in R.
+version: 1.1.0
 allowed-tools: Read, Write, Edit, Grep, Glob
 user-invocable: false
 ---

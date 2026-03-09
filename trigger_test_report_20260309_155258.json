@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-03-09T15:52:58.186640",
+  "tests_run": 12,
+  "skills": {
+    "r-performance": {
+      "positive": [
+        {
+          "prompt": "Este c\u00f3digo R est\u00e1 lento, como otimizar?",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Preciso fazer profiling em R",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como vectorizar este loop?",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Benchmarque estas fun\u00e7\u00f5es R",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como reduzir uso de mem\u00f3ria em R?",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Use profvis para an\u00e1lise de performance",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "for(i in 1:1000000) { ... }\n# This is too slow, help!",
+          "expected": "r-performance",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        },
+        {
+          "prompt": "My R code is using too much memory",
+          "expected": "r-performance",
+          "detected": [
+            "r-performance"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "How can I speed up this data processing?",
+          "expected": "r-performance",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Optimize Python code",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "C++ performance tuning",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "JavaScript optimization",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 7,
+      "false_negatives": 2,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 0.7777777777777778,
+        "precision": 1.0,
+        "accuracy": 0.8333333333333334,
+        "f1_score": 0.8750000000000001
+      }
+    }
+  }
+}
