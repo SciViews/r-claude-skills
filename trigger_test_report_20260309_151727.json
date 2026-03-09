@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-03-09T15:17:27.889982",
+  "tests_run": 8,
+  "skills": {
+    "skillMaker": {
+      "positive": [
+        {
+          "prompt": "Crie um novo skill para Claude Code",
+          "expected": "skillMaker",
+          "detected": [
+            "skillMaker"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como fazer um skill personalizado?",
+          "expected": "skillMaker",
+          "detected": [
+            "skillMaker"
+          ],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Generate a skill for X domain",
+          "expected": "skillMaker",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        },
+        {
+          "prompt": "I want to build a Claude skill",
+          "expected": "skillMaker",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        },
+        {
+          "prompt": "Help me create a skillMaker skill",
+          "expected": "skillMaker",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        }
+      ],
+      "context": [],
+      "negative": [
+        {
+          "prompt": "Create a GitHub Action",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Build a VSCode extension",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        },
+        {
+          "prompt": "Write a bash script",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 2,
+      "false_negatives": 3,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 0.4,
+        "precision": 1.0,
+        "accuracy": 0.625,
+        "f1_score": 0.5714285714285715
+      }
+    }
+  }
+}

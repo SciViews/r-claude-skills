@@ -1,7 +1,7 @@
 ---
 name: skillMaker
-description: Create new Claude Code skills following best practices. Use when user asks to "create a skill", "make a new skill", "build a skill", "generate skill", mentions "skill maker", discusses creating Claude Code automations, or wants help building custom Claude skills.
-version: 1.0.0
+description: Create new Claude Code skills following best practices. Use when user asks to "create a skill", "criar skill", "criar um skill", "make a new skill", "build a skill", "generate skill", "gerar skill", "novo skill", "new skill", "custom skill", "skill personalizado", mentions "skill maker", "skillMaker", "skill generator", "gerador de skill", discusses "creating Claude Code automations", "criar automação", "build automation", "skill development", "desenvolvimento de skill", "skill creation", "criação de skill", wants help "building custom Claude skills", "construir skills", "design a skill", "desenhar skill", or asks about "how to make a skill", "como criar skill", "skill template", "template de skill", "skill structure", "estrutura de skill", "skill patterns", "padrões de skill".
+version: 1.1.0
 allowed-tools: Read, Write, Edit, Glob, Bash
 ---
 

@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-03-09T14:54:35.419314",
+  "tests_run": 24,
+  "skills": {
+    "r-tidymodels": {
+      "positive": [
+        {
+          "prompt": "Crie um modelo de classificação com tidymodels",
+          "expected": "r-tidymodels",
+          "detected": ["r-tidymodels"],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como fazer feature engineering com recipes?",
+          "expected": "r-tidymodels",
+          "detected": ["r-tidymodels"],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Preciso fazer cross-validation",
+          "expected": "r-tidymodels",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "library(tidymodels)\n\ndata_split <- initial_split(data)\n# Next steps?",
+          "expected": "r-tidymodels",
+          "detected": ["r-tidymodels"],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Scikit-learn random forest",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 3,
+      "false_negatives": 6,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 0.333,
+        "precision": 1.0,
+        "accuracy": 0.5,
+        "f1_score": 0.499
+      }
+    },
+    "ggplot2": {
+      "positive": [
+        {
+          "prompt": "Crie um gráfico com ggplot2",
+          "expected": "ggplot2",
+          "detected": ["ggplot2"],
+          "success": true,
+          "type": "true_positive"
+        },
+        {
+          "prompt": "Como customizar o theme deste plot?",
+          "expected": "ggplot2",
+          "detected": [],
+          "success": false,
+          "type": "false_negative"
+        }
+      ],
+      "context": [
+        {
+          "prompt": "ggplot(data, aes(x, y)) + geom_point()\n# How to improve this?",
+          "expected": "ggplot2",
+          "detected": ["ggplot2"],
+          "success": true,
+          "type": "true_positive"
+        }
+      ],
+      "negative": [
+        {
+          "prompt": "Matplotlib scatter plot",
+          "expected": null,
+          "detected": [],
+          "success": true,
+          "type": "true_negative"
+        }
+      ],
+      "true_positives": 4,
+      "false_negatives": 5,
+      "true_negatives": 3,
+      "false_positives": 0,
+      "metrics": {
+        "recall": 0.444,
+        "precision": 1.0,
+        "accuracy": 0.583,
+        "f1_score": 0.615
+      }
+    }
+  }
+}
