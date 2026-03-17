@@ -1,20 +1,20 @@
 # R Programming Skills for Claude Code
 
-A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **24 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis and deep learning** capabilities.
+A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **25 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis and deep learning** capabilities.
 
 ## 🎯 Overview
 
-This repository contains **24 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning**, these skills provide expert guidance with **perfect detection accuracy**.
+This repository contains **25 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning**, these skills provide expert guidance with **perfect detection accuracy**.
 
 ### 🏆 Quality Metrics
 
 ```
 ✅ 100% Recall - Never misses a relevant query
 ✅ 100% Precision - Zero false activations
-✅ 24/24 Skills at 100% - Complete perfection
+✅ 25/25 Skills at 100% - Complete perfection
 ✅ 251+ Test Cases - All passing
 ✅ Bilingual Support - Portuguese + English
-✅ 46,000+ Lines - Production-ready code & documentation
+✅ 49,500+ Lines - Production-ready code & documentation
 ```
 
 **Proven Results**: Improved from 48.2% to 100% recall through systematic optimization using the skillMaker pattern with bilingual triggers and language filters.
@@ -31,7 +31,7 @@ This repository contains **24 production-ready skills** that enhance Claude Code
 - r-tidymodels, r-feature-engineering, r-timeseries, r-text-mining, r-bayes, **learning-paradigms** ⭐ NEW
 
 **Audio & Deep Learning** ⭐ NEW SUITE
-- **r-bioacoustics** (5,667 lines), **r-deeplearning** (7,562 lines), **r-audio-multiclass**, **keras3** (8,618 lines), **r-tensorflow**
+- **r-bioacoustics** (5,667 lines), **r-deeplearning** (7,562 lines), **r-audio-multiclass**, **keras3** (8,618 lines), **r-tensorflow**, **torch-r** (3,451 lines) 🔥 NEW
 
 **Advanced R** (performance, OOP, packages, metaprogramming)
 - r-performance, r-oop, r-package-development, rlang-patterns
@@ -66,7 +66,7 @@ This repository contains **24 production-ready skills** that enhance Claude Code
 
 [→ See complete documentation](docs/)
 
-## 📦 Available Skills (24 Total)
+## 📦 Available Skills (25 Total)
 
 All skills achieve **100% recall and 100% precision** on comprehensive test suites.
 
@@ -106,6 +106,16 @@ All skills achieve **100% recall and 100% precision** on comprehensive test suit
   - TensorFlow backend setup, GPU configuration, SavedModel deployment
   - TensorFlow-specific features, deployment pipelines
   - Complements keras3 (handles infrastructure while keras3 handles models)
+
+- **[torch-r](/.claude/skills/torch-r/)** - PyTorch for R with maximum flexibility 🔥 NEW (3,451 lines)
+  - Maximum control: custom training loops, gradient manipulation, dynamic graphs
+  - Complete nn_module patterns: CNN, LSTM, GRU, attention, custom layers
+  - Domain examples: audio (spectrograms), NLP (LSTM+attention), time series, vision
+  - Advanced: custom losses, transfer learning, multi-GPU, performance optimization
+  - Full comparison: torch vs keras3 decision matrix (587 lines)
+  - Production templates: ready-to-use training pipeline (365 lines)
+  - 6 files with complete workflows and executable R code
+  - Perfect for research, experimentation, and PyTorch ecosystem integration
 
 - **[learning-paradigms](/.claude/skills/learning-paradigms/)** - ML paradigm selection guide
   - Self-supervised learning (SSL), few-shot learning (FSL), weak supervision
@@ -340,10 +350,41 @@ library(torchaudio)
 # Transfer learning and few-shot learning
 ```
 
+**PyTorch for R with maximum control:** 🔥 NEW
+```r
+library(torch)      # Auto-triggers torch-r skill
+
+# Custom training loop with full control
+model <- nn_module(
+  "MyNet",
+  initialize = function(input_dim, hidden_dim, output_dim) {
+    self$fc1 <- nn_linear(input_dim, hidden_dim)
+    self$fc2 <- nn_linear(hidden_dim, output_dim)
+  },
+  forward = function(x) {
+    x |> self$fc1() |> nn_relu() |> self$fc2()
+  }
+)
+
+# Explicit training loop
+for (epoch in 1:num_epochs) {
+  optimizer$zero_grad()
+  output <- model(batch$x)
+  loss <- criterion(output, batch$y)
+  loss$backward()
+  nn_utils_clip_grad_norm_(model$parameters, max_norm = 1.0)
+  optimizer$step()
+}
+
+# Perfect for: research, custom architectures, gradient manipulation
+# Complete examples: audio CNN, LSTM+attention, custom losses
+# Comparison guide: torch vs keras3 decision matrix
+```
+
 ## 🏗️ Repository Structure
 
 ```
-.claude/skills/          # 23 production-ready skills
+.claude/skills/          # 25 production-ready skills
 ├── r-datascience/       # Core data science orchestrator
 ├── tidyverse-expert/    # Complete tidyverse (dplyr, tidyr, purrr, stringr, forcats, lubridate)
 ├── tidyverse-patterns/  # Modern dplyr 1.1+ patterns
@@ -353,6 +394,9 @@ library(torchaudio)
 ├── r-bioacoustics/      # ⭐ NEW - Audio bioacoustic analysis (5,667 lines)
 ├── r-deeplearning/      # ⭐ NEW - Deep learning with torch/keras3 (7,562 lines)
 ├── r-audio-multiclass/  # ⭐ NEW - Multi-label audio classification
+├── torch-r/             # 🔥 NEW - PyTorch for R with maximum flexibility (3,451 lines)
+├── keras3/              # ⭐ NEW - Keras3 multi-backend deep learning (8,618 lines)
+├── r-tensorflow/        # ⭐ NEW - TensorFlow infrastructure for R
 ├── learning-paradigms/  # ⭐ NEW - ML paradigm selection (SSL, few-shot, weak supervision)
 ├── r-timeseries/        # Time series forecasting (fable/tsibble)
 ├── r-text-mining/       # Text mining and NLP (tidytext)
@@ -503,16 +547,18 @@ MIT License - See [LICENSE](LICENSE) for details
 ## 📈 Project Metrics
 
 ```
-Skills: 23 total, 23 perfect (100%)
+Skills: 25 total, 25 perfect (100%)
 Test Cases: 251+ passing (100%)
-Lines of Code: 90,000+ across all skills
+Lines of Code: 93,500+ across all skills
 Recall: 100% (was 48.2% at baseline)
 Precision: 100% (was 90.8% at baseline)
 Languages: English + Portuguese
 Validation: Automated (YAML, syntax, triggers)
-Latest Addition: Audio & Deep Learning Suite (13,229 lines)
+Latest Addition: torch-r - PyTorch for R (3,451 lines) 🔥
+Audio & Deep Learning Suite: 16,680 lines total
   - r-bioacoustics: 5,667 lines
   - r-deeplearning: 7,562 lines
+  - torch-r: 3,451 lines (NEW!)
   - 4 autonomous agents, 8,000+ lines researched
 ```
 
