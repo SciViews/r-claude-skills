@@ -1,20 +1,20 @@
 # R Programming Skills for Claude Code
 
-A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **23 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis and deep learning** capabilities.
+A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **24 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis and deep learning** capabilities.
 
 ## 🎯 Overview
 
-This repository contains **23 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning**, these skills provide expert guidance with **perfect detection accuracy**.
+This repository contains **24 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning**, these skills provide expert guidance with **perfect detection accuracy**.
 
 ### 🏆 Quality Metrics
 
 ```
 ✅ 100% Recall - Never misses a relevant query
 ✅ 100% Precision - Zero false activations
-✅ 23/23 Skills at 100% - Complete perfection
+✅ 24/24 Skills at 100% - Complete perfection
 ✅ 251+ Test Cases - All passing
 ✅ Bilingual Support - Portuguese + English
-✅ 37,000+ Lines - Production-ready code & documentation
+✅ 46,000+ Lines - Production-ready code & documentation
 ```
 
 **Proven Results**: Improved from 48.2% to 100% recall through systematic optimization using the skillMaker pattern with bilingual triggers and language filters.
@@ -31,7 +31,7 @@ This repository contains **23 production-ready skills** that enhance Claude Code
 - r-tidymodels, r-feature-engineering, r-timeseries, r-text-mining, r-bayes, **learning-paradigms** ⭐ NEW
 
 **Audio & Deep Learning** ⭐ NEW SUITE
-- **r-bioacoustics** (5,667 lines), **r-deeplearning** (7,562 lines), **r-audio-multiclass**
+- **r-bioacoustics** (5,667 lines), **r-deeplearning** (7,562 lines), **r-audio-multiclass**, **keras3** (8,618 lines), **r-tensorflow**
 
 **Advanced R** (performance, OOP, packages, metaprogramming)
 - r-performance, r-oop, r-package-development, rlang-patterns
@@ -66,7 +66,7 @@ This repository contains **23 production-ready skills** that enhance Claude Code
 
 [→ See complete documentation](docs/)
 
-## 📦 Available Skills (23 Total)
+## 📦 Available Skills (24 Total)
 
 All skills achieve **100% recall and 100% precision** on comprehensive test suites.
 
@@ -91,6 +91,21 @@ All skills achieve **100% recall and 100% precision** on comprehensive test suit
   - Multi-label for bioacoustics and ecological monitoring
   - BCEWithLogitsLoss, audio augmentation, time-frequency masking
   - Overlapping species detection in soundscapes
+
+- **[keras3](/.claude/skills/keras3/)** - Keras3-first deep learning in R (8,618 lines)
+  - Multi-backend support: TensorFlow, JAX, PyTorch (switch dynamically!)
+  - Comprehensive preprocessing: 50+ layers (audio, image, text, categorical)
+  - **Keras3-native audio**: `layer_mel_spectrogram()`, `layer_stft_spectrogram()` (no torch!)
+  - 30+ pretrained applications: ResNet, EfficientNet, MobileNet, ConvNeXt
+  - Transfer learning patterns: freeze → train head → fine-tune workflow
+  - Complete examples: Functional API, custom layers/models, audio, NLP, deployment
+  - Production templates: simple classifier, custom training loop
+  - 14 files with executable R code and comprehensive documentation
+
+- **[r-tensorflow](/.claude/skills/r-tensorflow/)** - TensorFlow for R infrastructure
+  - TensorFlow backend setup, GPU configuration, SavedModel deployment
+  - TensorFlow-specific features, deployment pipelines
+  - Complements keras3 (handles infrastructure while keras3 handles models)
 
 - **[learning-paradigms](/.claude/skills/learning-paradigms/)** - ML paradigm selection guide
   - Self-supervised learning (SSL), few-shot learning (FSL), weak supervision
