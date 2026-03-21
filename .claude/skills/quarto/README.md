@@ -50,6 +50,7 @@ You can also invoke manually:
     ├── yaml-options.md           # YAML frontmatter reference
     ├── chunk-options.md          # Code chunk options
     ├── r-integration.md          # R package integration
+    ├── dashboards.md             # Comprehensive dashboard patterns
     └── publishing.md             # Publishing workflows
 ```
 

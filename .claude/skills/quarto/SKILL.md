@@ -259,6 +259,8 @@ ggplot(sales, aes(date, revenue)) + geom_line()
 
 See [examples/dashboard-example.qmd](examples/dashboard-example.qmd) for full example.
 
+For comprehensive dashboard patterns including layout strategies, value boxes, theming, Shiny integration, and deployment, see [references/dashboards.md](references/dashboards.md).
+
 ### 3. Presentations
 
 **Use Case**: Conference talks, teaching slides, webinars
@@ -649,11 +651,13 @@ quarto render document.Rmd
 - [references/yaml-options.md](references/yaml-options.md) - Complete YAML configuration
 - [references/chunk-options.md](references/chunk-options.md) - All code chunk options
 - [references/r-integration.md](references/r-integration.md) - R packages and patterns
+- [references/dashboards.md](references/dashboards.md) - Comprehensive dashboard patterns
 - [references/publishing.md](references/publishing.md) - Publishing workflows
 
 **External Resources:**
 - Official Guide: https://quarto.org/docs/guide/
 - R Integration: https://quarto.org/docs/computations/r.html
+- Dashboard Guide: https://quarto.org/docs/dashboards/
 - Gallery: https://quarto.org/docs/gallery/
 - Reference: https://quarto.org/docs/reference/
 
