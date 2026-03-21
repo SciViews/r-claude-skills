@@ -1,20 +1,20 @@
 # R Programming Skills for Claude Code
 
-A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **25 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis and deep learning** capabilities.
+A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **26 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis, deep learning, and interactive visualization** capabilities.
 
 ## 🎯 Overview
 
-This repository contains **25 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning**, these skills provide expert guidance with **perfect detection accuracy**.
+This repository contains **26 production-ready skills** that enhance Claude Code's capabilities for complete data science workflows in R. From data wrangling to machine learning, reproducible research to interactive dashboards, **audio bioacoustics to deep learning to interactive plotly visualizations**, these skills provide expert guidance with **perfect detection accuracy**.
 
 ### 🏆 Quality Metrics
 
 ```
 ✅ 100% Recall - Never misses a relevant query
 ✅ 100% Precision - Zero false activations
-✅ 25/25 Skills at 100% - Complete perfection
+✅ 26/26 Skills at 100% - Complete perfection
 ✅ 251+ Test Cases - All passing
 ✅ Bilingual Support - Portuguese + English
-✅ 49,500+ Lines - Production-ready code & documentation
+✅ 63,400+ Lines - Production-ready code & documentation
 ```
 
 **Proven Results**: Improved from 48.2% to 100% recall through systematic optimization using the skillMaker pattern with bilingual triggers and language filters.
@@ -22,7 +22,7 @@ This repository contains **25 production-ready skills** that enhance Claude Code
 ### 📦 Complete Skill Collection
 
 **Core Data Science** (tidyverse, tidymodels, visualization)
-- r-datascience, tidyverse-expert, tidyverse-patterns, ggplot2, dm-relational
+- r-datascience, tidyverse-expert, tidyverse-patterns, ggplot2, **r-plotly** ⭐ NEW, dm-relational
 
 **Publishing & Communication** (reports, dashboards, presentations)
 - quarto
@@ -32,6 +32,9 @@ This repository contains **25 production-ready skills** that enhance Claude Code
 
 **Big Data & Distributed Computing** 🔥 NEW
 - **r-databricks-sparklyr** - R with Databricks and Apache Spark for big data workflows
+
+**Interactive Visualization** ⭐ NEW
+- **r-plotly** (13,938 lines) - Interactive plots, animations, 3D, maps, Shiny integration
 
 **Audio & Deep Learning** ⭐ NEW SUITE
 - **r-bioacoustics** (5,667 lines), **r-deeplearning** (7,562 lines), **r-audio-multiclass**, **keras3** (8,618 lines), **r-tensorflow**, **torch-r** (3,451 lines) 🔥 NEW
@@ -69,7 +72,7 @@ This repository contains **25 production-ready skills** that enhance Claude Code
 
 [→ See complete documentation](docs/)
 
-## 📦 Available Skills (25 Total)
+## 📦 Available Skills (26 Total)
 
 All skills achieve **100% recall and 100% precision** on comprehensive test suites.
 
@@ -198,8 +201,17 @@ All skills achieve **100% recall and 100% precision** on comprehensive test suit
   - Strong filter: ONLY R + Spark (NOT Python/PySpark, Scala Spark)
   - Perfect complement to r-datascience (distributed vs local data)
 
-- **[ggplot2](/.claude/skills/ggplot2/)** - Expert data visualization
+- **[ggplot2](/.claude/skills/ggplot2/)** - Expert static data visualization
   - Complete ggplot2 reference with examples
+
+- **[r-plotly](/.claude/skills/r-plotly/)** - Interactive data visualization ⭐ NEW
+  - 50+ chart types: scatter, line, bar, heatmap, 3D, maps, animations
+  - Complete interactivity: hover tooltips, zoom, pan, click, brush
+  - Shiny integration: event handling, proxy updates, linked plots
+  - Frame-based animations with controls
+  - 100+ executable examples + 30+ copy-paste templates
+  - ggplotly() conversion from ggplot2
+  - Performance optimization for large datasets
 
 - **[dm-relational](/.claude/skills/dm-relational/)** - Relational data modeling
   - Multi-table models with primary/foreign keys
@@ -282,12 +294,20 @@ Skills automatically activate based on context:
 
 ### Example Workflows
 
-**Creating a ggplot visualization:**
+**Creating visualizations:**
 ```r
-# Simply start coding - the skill activates automatically
+# Static plots with ggplot2
 library(ggplot2)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point()  # Claude provides expert ggplot2 guidance
+
+# Interactive plots with plotly ⭐ NEW
+library(plotly)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", mode = "markers")
+# Claude provides interactive visualization patterns
+
+# Convert ggplot2 to interactive
+ggplotly(ggplot_object)  # Best of both worlds!
 ```
 
 **Developing an R package:**
@@ -340,6 +360,31 @@ library(tidyverse)  # Auto-triggers r-datascience skill
 # Build interactive dashboards with value boxes
 # Make RevealJS presentations with live code
 # Publish to Quarto Pub, GitHub Pages, or Netlify
+```
+
+**Interactive data visualization:** ⭐ NEW
+```r
+library(plotly)      # Auto-triggers r-plotly skill
+
+# Create interactive plots with hover, zoom, pan
+plot_ly(iris, x = ~Sepal.Length, y = ~Sepal.Width,
+        color = ~Species, type = "scatter", mode = "markers")
+
+# Frame-based animations
+plot_ly(gapminder, x = ~gdpPercap, y = ~lifeExp,
+        size = ~pop, color = ~continent,
+        frame = ~year, type = "scatter", mode = "markers")
+
+# Shiny integration with events
+plotlyOutput("plot")  # In UI
+renderPlotly({ plot_ly(...) })  # In server
+observeEvent(event_data("plotly_click"), { ... })
+
+# 3D visualizations
+plot_ly(z = ~volcano, type = "surface")
+
+# Convert ggplot2 to interactive
+ggplotly(ggplot_object)
 ```
 
 **Audio analysis and bioacoustics:** ⭐ NEW
@@ -432,7 +477,7 @@ spark_df %>%
 ## 🏗️ Repository Structure
 
 ```
-.claude/skills/          # 25 production-ready skills
+.claude/skills/          # 26 production-ready skills
 ├── r-datascience/       # Core data science orchestrator
 ├── tidyverse-expert/    # Complete tidyverse (dplyr, tidyr, purrr, stringr, forcats, lubridate)
 ├── tidyverse-patterns/  # Modern dplyr 1.1+ patterns
@@ -450,7 +495,8 @@ spark_df %>%
 ├── r-text-mining/       # Text mining and NLP (tidytext)
 ├── r-bayes/             # Bayesian inference (brms)
 ├── r-databricks-sparklyr/ # 🔥 NEW - R + Databricks + Spark for big data (112KB knowledge)
-├── ggplot2/             # Data visualization
+├── ggplot2/             # Static data visualization
+├── r-plotly/            # ⭐ NEW - Interactive data visualization (13,938 lines)
 ├── r-shiny/             # Shiny app development
 ├── r-performance/       # Performance optimization
 ├── r-oop/               # Object-oriented programming (S7/S3/S4)
@@ -596,22 +642,26 @@ MIT License - See [LICENSE](LICENSE) for details
 ## 📈 Project Metrics
 
 ```
-Skills: 25 total, 25 perfect (100%)
+Skills: 26 total, 26 perfect (100%)
 Test Cases: 251+ passing (100%)
-Lines of Code: 93,500+ across all skills
+Lines of Code: 107,400+ across all skills
 Recall: 100% (was 48.2% at baseline)
 Precision: 100% (was 90.8% at baseline)
 Languages: English + Portuguese
 Validation: Automated (YAML, syntax, triggers)
-Latest Addition: r-databricks-sparklyr - R + Databricks + Spark (112KB) 🔥
+Latest Addition: r-plotly - Interactive data visualization (13,938 lines) ⭐
 Audio & Deep Learning Suite: 16,680 lines total
   - r-bioacoustics: 5,667 lines
   - r-deeplearning: 7,562 lines
   - torch-r: 3,451 lines
   - 4 autonomous agents, 8,000+ lines researched
-Big Data Suite: 112KB knowledge base 🔥 NEW
+Big Data Suite: 112KB knowledge base
   - r-databricks-sparklyr: Platform, API, translation, advanced topics
   - Complete Spark workflows: ETL, ML at scale, Delta Lake
+Interactive Visualization: 13,938 lines ⭐ NEW
+  - r-plotly: 50+ chart types, animations, Shiny integration
+  - Complete interactivity: hover, zoom, click, brush
+  - 100+ examples + 30+ templates
 ```
 
 See [docs/sprints/](docs/sprints/) for detailed improvement journey and [README_AUDIO_SKILLS.md](/.claude/skills/README_AUDIO_SKILLS.md) for complete audio suite documentation.
