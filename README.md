@@ -1,4 +1,20 @@
-# R Programming Skills for Claude Code
+# R and SciViews::R Programming Skills for Claude Code
+
+This repository is a fork of the original [Claude Code Skills Repository](https://github.com/GiulSposito/r-claude-skills) with derived skills to support the [SciViews::R](https://sciviews.r-universe.dev/) dialect.
+
+Installation for [Positron](https://positron.posit.co):
+
+-   In Positron, [enable Positron Assistant](https://positron.posit.co/assistant-getting-started.html) and enalbe Anthropic with an API Key (create it if needed [here](https://platform.claude.com/settings/keys)).
+-   Install [Claude Code CLI](https://code.claude.com/docs/en/quickstart), open a terminal in the folder of the current project and start `claude`. Follow instructions on the terminal to configure it.
+-   Place the skills you are interested in the `.claude/skills` folder of your project, or for general use, in `~/.clude/skills`. You can copy them from this repository or add it as a git submodule.
+-   The skills should be available. For instance, if you installed the `chart` skills, ask in the Posit Assistant using latest Claude Opus, Sonnet our Haiki directly from Anthropic (not from GoitHub Copilot) to use the skill. For instance: "Create plots with the chart() function using the chat skill." The assistant should answer positively with a summary of what he will do. Then, try to generate a chart to finalize the test.
+
+## Modified skills
+
+-   **chart**, derived from the original *ggplot2* skill to create [charts](https://github.com/SciViews/chart),
+-   ... more to come...
+
+## Original README
 
 A comprehensive collection of Claude Code skills for R programming, data science, and statistical computing. Transform Claude into an expert R data scientist with **26 production-ready skills** achieving **100% detection accuracy**, now including cutting-edge **audio analysis, deep learning, and interactive visualization** capabilities.
 

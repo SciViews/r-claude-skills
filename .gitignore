@@ -86,3 +86,4 @@ npm-debug.log*
 
 # Local References
 sources/
+.positai
