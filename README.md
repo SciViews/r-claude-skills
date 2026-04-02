@@ -1,6 +1,8 @@
 # R and SciViews::R Programming Skills for Claude Code
 
-This repository is a fork of the original [Claude Code Skills Repository](https://github.com/GiulSposito/r-claude-skills) with derived skills to support the [SciViews::R](https://sciviews.r-universe.dev/) dialect.
+This repository is a fork of the original [Claude Code Skills Repository](https://github.com/GiulSposito/r-claude-skills) with derived skills to support the [SciViews::R](https://sciviews.r-universe.dev/) dialect. Some skills there are derived from [claude-code-r-skills](https://github.com/ab604/claude-code-r-skills/tree/main), and this repo is ammended with hooks, agents, commands, contexts and rules from the later site. See README_claude-code-r-skills.md. This repos is licensed as MIT.
+
+Also see [posit-dev/skills](https://github.com/posit-dev/skills/) for skills contributed by Posit employees (but it sxeems these are already included in the Posit Assistant ? To be checked).
 
 Installation for [Positron](https://positron.posit.co):
 
