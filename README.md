@@ -6,8 +6,10 @@ Installation for [Positron](https://positron.posit.co):
 
 -   In Positron, [enable Positron Assistant](https://positron.posit.co/assistant-getting-started.html) and enalbe Anthropic with an API Key (create it if needed [here](https://platform.claude.com/settings/keys)).
 -   Install [Claude Code CLI](https://code.claude.com/docs/en/quickstart), open a terminal in the folder of the current project and start `claude`. Follow instructions on the terminal to configure it.
--   Place the skills you are interested in the `.claude/skills` folder of your project, or for general use, in `~/.clude/skills`. You can copy them from this repository or add it as a git submodule.
+-   Place the skills you are interested in the `.claude/skills` folder of your project, or for general use, in `~/.claude/skills`. You can copy them from this repository or add it as a git submodule.
 -   The skills should be available. For instance, if you installed the `chart` skills, ask in the Posit Assistant using latest Claude Opus, Sonnet our Haiki directly from Anthropic (not from GoitHub Copilot) to use the skill. For instance: "Create plots with the chart() function using the chat skill." The assistant should answer positively with a summary of what he will do. Then, try to generate a chart to finalize the test.
+
+-   Note that another source tels to install skills directly for Posit Assistant by placing them in `~/.positai/skills` (or for a projet, in `.positai/skills` subdirectory of the project), [see here](https://rworks.dev/posts/skills-in-rstudio-posit-assistant/).
 
 ## Modified skills
 
