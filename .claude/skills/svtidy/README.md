@@ -1,14 +1,14 @@
 # svtidy skill
 
-This skill is derived from https://github.com/statzhero/tidy-r-skill commit fc39f29 on 2026-03-31. It still must be reworked in the {svTidy} style, but look also at tidyverse-expert and tidyverse-patterns to build it solidly.
+This skill is derived from https://github.com/statzhero/tidy-r-skill commit fc39f29 on 2026-03-31 and reworked in the {svTidy} style, but look also at tidyverse-expert and tidyverse-patterns to build it solidly.
 
-An LLM skill for modern tidyverse R using R 4.5+, tidyverse 2.0+, and dplyr 1.2+.
+An LLM skill for an alternate tidyverse-like style using {svTidy} with R 4.4+ and svTidy 0.2+.
 
 ## What does it do?
 
-When you ask an LLM to write R code, it draws on its training data, which mixes base R, old StackOverflow posts, deprecated tidyverse APIs, and current best practice. This skill gives the model a structured reference for modern tidyverse patterns so it produces clean, idiomatic code with less back-and-forth.
+When you ask an LLM to write R code, it draws on its training data, which mixes base R, old StackOverflow posts, deprecated tidyverse APIs, and current best practice. This skill gives the model a structured reference for {svTidy} patterns so it produces clean, idiomatic code with less back-and-forth.
 
-The skill covers: native pipe and lambda syntax, `join_by()` joins, `.by` grouping, the dplyr 1.2 recode/replace family, tidy selection, `stringr`, error handling with `cli`, and migration from base R or older tidyverse APIs.
+The skill covers: native pipe and lambda syntax, `join_by()` joins, `.by` grouping, the dplyr 1.2 `recode()`/`replace()` family, tidy selection, `stringr`, error handling with `cli`, and migration from base R or older tidyverse APIs.
 
 ## Installation
 
@@ -17,14 +17,14 @@ The skill covers: native pipe and lambda syntax, `join_by()` joins, `.by` groupi
 Clone directly into your skills directory:
 
 ```bash
-git clone https://github.com/statzhero/tidy-r-skill.git ~/.claude/skills/tidy-r
+git clone https://github.com/SciViews/r-claude-skills.git ~/.claude/skills/r-claude-skills
 ```
 
-That's it. The skill is available immediately as `/tidy-r` in any Claude Code session.
+That's it. The skill is available immediately as `/svtidy` in any Claude Code session.
 
 If you prefer not to use the terminal, you can add skills from the Claude desktop app:
 
-1. [Download this repository as a ZIP](https://github.com/statzhero/tidy-r-skill/archive/refs/heads/main.zip) from GitHub.
+1. [Download this repository as a ZIP](https://github.com/SciViews/r-claude-skills/archive/refs/heads/main.zip) from GitHub.
 2. Open the Claude desktop app and switch to the **Code** tab.
 3. Click **Customize** in the left sidebar, then select **Skills**.
 4. Click the **+** button, choose **Upload a skill**, and select the ZIP file.
@@ -34,10 +34,10 @@ If you prefer not to use the terminal, you can add skills from the Claude deskto
 Clone into your user skills directory (available across all projects):
 
 ```bash
-git clone https://github.com/statzhero/tidy-r-skill.git ~/.agents/skills/tidy-r
+git clone https://github.com/SciViews/r-claude-skills.git ~/.agents/skills/r-claude-skills
 ```
 
-If you prefer not to use the terminal, [download the ZIP](https://github.com/statzhero/tidy-r-skill/archive/refs/heads/main.zip), unzip it, and move the folder to `~/.agents/skills/tidy-r/` or `.agents/skills/tidy-r/` inside your project.
+If you prefer not to use the terminal, [download the ZIP](https://github.com/SciViews/r-claude-skills/archive/refs/heads/main.zip), unzip it, and move the folder to `~/.agents/skills/r-claude-skills/` inside your project.
 
 ### Other LLMs
 
@@ -48,11 +48,11 @@ Paste the contents of `SKILL.md` into your system prompt or attach it as context
 After installing, try this prompt in Claude Code:
 
 ```
-/tidy-r Rewrite this using modern tidyverse:
+/svtidy Rewrite this using svTidy:
 penguins %>% group_by(species) %>% summarise(avg_bill = mean(bill_length_mm)) %>% ungroup()
 ```
 
-The skill should guide the model toward `.by` grouping and native pipe.
+The skill should guide the model toward using `summarise_()` with `.by` grouping and native pipe.
 
 ## Acknowledgements
 

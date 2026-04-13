@@ -2,47 +2,41 @@
 
 ## Per-operation grouping with .by
 
-The `.by` argument replaces the old `group_by() |> ... |> ungroup()` pattern. Results are always ungrouped.
+The `.by` argument replaces the old `group_by_() |> ... |> ungroup_()` pattern. Results are always ungrouped.
 
 ### Basic usage
 
 ```r
 data |>
-  summarise(
-    mean_value = mean(value),
-    .by = category
-  )
+  summarise_(mean_value = ~ fmean(value),
+    .by = 'category')
 ```
 
 ### Multiple grouping variables
 
 ```r
 data |>
-  summarise(
-    total = sum(revenue),
-    .by = c(company, year)
-  )
+  summarise_(total = ~ fsum(revenue),
+    .by = c('company', 'year'))
 ```
 
-### .by with mutate (window functions)
+### .by with mutate_ (window functions)
 
 ```r
 data |>
-  mutate(
-    pct_of_group = revenue / sum(revenue),
-    rank = row_number(desc(revenue)),
-    .by = region
+  mutate_(
+    pct_of_group = ~ revenue / fsum(revenue),
+    rank         = row_number(desc(revenue)),
+    .by = 'region'
   )
 ```
 
-### .by with filter (group-level filtering)
+### .by with filter_ (group-level filtering)
 
 ```r
 data |>
-  filter(
-    revenue == max(revenue),
-    .by = region
-  )
+  filter_(~ revenue == max(revenue),
+    .by = region)
 ```
 
 ### Place .by on its own line
@@ -50,14 +44,12 @@ data |>
 ```r
 # Good - readable
 data |>
-  summarise(
-    mean_value = mean(value),
-    .by = category
-  )
+  summarise(mean_value = ~ fmean(value),
+    .by = 'category')
 
 # Avoid - crammed
 data |>
-  summarise(mean_value = mean(value), .by = category)
+  summarise_(mean_value = ~ fmean(value), .by = 'category')
 ```
 
 ### Avoid - old persistent grouping pattern
@@ -65,20 +57,20 @@ data |>
 ```r
 # Avoid
 data |>
-  group_by(category) |>
-  summarise(mean_value = mean(value)) |>
-  ungroup()
+  group_by_('category') |>
+  summarise_(mean_value = ~ fmean(value)) |>
+  ungroup_()
 ```
 
 ## pick() for column selection
 
-Use `pick()` inside data-masking functions to select columns by name or tidyselect helpers:
+Use `pick()` inside formula-masking functions to select columns by name or tidyselect helpers:
 
 ```r
 data |>
-  summarise(
-    n_x_cols = ncol(pick(starts_with("x"))),
-    n_y_cols = ncol(pick(starts_with("y")))
+  summarise_(
+    n_x_cols = ~ ncol(pick(starts_with("x"))),
+    n_y_cols = ~ ncol(pick(starts_with("y")))
   )
 ```
 
@@ -86,8 +78,8 @@ data |>
 
 ```r
 data |>
-  mutate(
-    row_mean = rowMeans(pick(where(is.numeric)))
+  mutate_(
+    row_mean = ~ rowMeans(pick(where(is.numeric)))
   )
 ```
 
@@ -99,23 +91,21 @@ Apply one or more functions to multiple columns:
 
 ```r
 data |>
-  summarise(
-    across(where(is.numeric), \(x) mean(x)),
-    .by = group
-  )
+  summarise_(~ across(where(is.numeric), \(x) mean(x)),
+    .by = 'group')
 ```
 
 ### Multiple functions with naming
 
 ```r
 data |>
-  summarise(
+  summarise_(
     across(
       c(revenue, cost),
       list(mean = \(x) mean(x), sd = \(x) sd(x)),
       .names = "{.fn}_{.col}"
     ),
-    .by = region
+    .by = 'region'
   )
 ```
 
@@ -123,25 +113,25 @@ data |>
 
 ```r
 data |>
-  mutate(
-    across(where(is.character), str_to_lower)
+  mutate_(
+    ~ across(where(is.character), str_to_lower)
   )
 ```
 
-## reframe() for multi-row results
+## reframe_() for multi-row results
 
-When a summary returns multiple rows per group, use `reframe()` instead of `summarise()`:
+When a summary returns multiple rows per group, use `reframe_()` instead of `summarise_()`:
 
 ```r
 data |>
-  reframe(
+  reframe_(
     quantile = c(0.25, 0.50, 0.75),
     value = quantile(x, c(0.25, 0.50, 0.75)),
-    .by = group
+    .by = 'group'
   )
 ```
 
-## Data masking vs tidy selection
+## Formula masking instead of data masking or tidy selection
 
 Understand the difference for writing functions:
 
@@ -153,7 +143,7 @@ Understand the difference for writing functions:
 ```r
 my_summary <- function(data, summary_var) {
   data |>
-    summarise(mean_val = mean({{ summary_var }}))
+    summarise_(mean_val = ~ fmean({{ summary_var }}))
 }
 ```
 
@@ -161,7 +151,7 @@ my_summary <- function(data, summary_var) {
 
 ```r
 for (var in names(mtcars)) {
-  mtcars |> count(.data[[var]]) |> print()
+  count_(mtcars, ~ .data[[var]]) |> print()
 }
 ```
 
@@ -170,6 +160,6 @@ for (var in names(mtcars)) {
 ```r
 my_summary <- function(data, summary_vars) {
   data |>
-    summarise(across({{ summary_vars }}, \(x) mean(x)))
+    summarise_(~ across({{ summary_vars }}, \(x) fmean(x)))
 }
 ```

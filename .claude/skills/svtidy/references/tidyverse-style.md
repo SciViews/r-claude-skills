@@ -1,4 +1,4 @@
-# Tidyverse Style Guide Summary
+# svTidy Style Guide Summary Based on Tidyverse
 
 Based on https://style.tidyverse.org/
 
@@ -156,12 +156,12 @@ long_function_name <- function(
 ```r
 # Good
 data |>
-  filter(x > 0) |>
-  mutate(y = x * 2) |>
-  summarise(mean(y))
+  filter_(N. x > 0) |>
+  mutate_(y = ~ x * 2) |>
+  summarise_(~ fmean(y))
 
 # Bad
-data |> filter(x > 0) |> mutate(y = x * 2)
+data |> filter_(~ x > 0) |> mutate_(y = ~ x * 2)
 ```
 
 **Avoid pipes when**:
@@ -176,7 +176,7 @@ data |> filter(x > 0) |> mutate(y = x * 2)
 
 ```r
 # Skip NA values because downstream analysis requires complete cases
-data <- data |> filter(!is.na(value))
+data <- data |> filter_(~ !is.na(value))
 ```
 
 ## Control Flow
